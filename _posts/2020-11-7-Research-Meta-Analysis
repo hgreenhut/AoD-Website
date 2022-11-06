@@ -1,0 +1,115 @@
+---
+layout: post
+title: Digimon
+subtitle: Lab 2
+# gh-repo: daattali/beautiful-jekyll
+# gh-badge: [star, fork, follow]
+# tags: [test]
+# comments: true
+author: Henry Greenhut
+---
+Author: Henry Greenhut
+<br/>
+
+## Are chess players smarter than non-chess players? A meta-analysis.
+[Research Paper](https://reader.elsevier.com/reader/sd/pii/S0160289616301635?token=86F16125186C1BCBE67F2AC68C7B2045B53E7FC4460912DA075BB7907886111FE9D2599887B22BDF3B42219A463205F7&originRegion=us-east-1&originCreation=20221106213613))
+---
+
+**Opening the digimon file** 
+```python
+with open("datasets/digimon.csv", "r") as f:
+    data = csv.DictReader(f)
+    data = list(data)
+```
+I type casted the dict reader into a list so I could reuse it across multiple functions.
+
+---
+
+**Average Speed**
+
+To determine the average speed of the digimon, I figured out how many digimon there were and the combined speeds of all the digimon.
+
+To do this, I created a dictionary that tracked the total count and speed of the digimon. 
+```python
+speed = {"Count": 0, "Tota
+l Speed": 0}
+```
+Then, I looped through all the digimon, incrementing the count by one and the speed by the digimon's speed.
+```python
+for row in data:
+    speed["Count"] += 1
+    speed["Total Speed"] += int(row["Spd"])
+```
+At the end, I divided the total speed by the count to determine the average speed. I rounded it to three decimal places.
+```python
+averageSpeed = round(speed["Total Speed"]/speed["Count"], 3)
+```
+
+---
+
+**Count Attribute**
+
+I looped through all of the digimon. When a matching column had a matching value, I incremented my count variable.
+```python
+if row[column] == attribute:
+            count += 1
+```
+---
+
+**Team Recruitor -- Find Group of Digimon that Fit Constraints**
+
+I wanted to create a function that would allow you to efficiently find a matching group of digimon when given: the maximum memory allowed, the minimum attack allowed, and the maximum number of team members.
+
+First, I looped through the digimon file to collect relevant information. I only included digimon within the maximum memory:
+```python
+if int(row["Memory"]) <= int(max_memory):
+```
+If a digimon had sufficient attack to meet the requirements alone, I just returned information about that digimon:
+```python
+if int(row["Atk"]) >= int(min_attack):
+```
+I appended information about each digimon's attack, memory, and number into a nested list:
+```python
+ atk.append([int(row["Atk"]), int(row["Memory"]), int(row["Number"])])
+```
+Then I built a function to sort the nested list highest to lowest by the digimon with the most attack per memory (source - [https://www.geeksforgeeks.org/sort-in-python/](https://www.geeksforgeeks.org/sort-in-python/)):
+```python
+def attack_per_memory(elem):
+    return elem[0]/elem[1]
+atk.sort(key = attack_per_memory, reverse=True)
+```
+This way, the nested for loops will first compare digimon that are more likely to fit the memory and attack requirements.
+
+To be able to dynamically pick the max number of digimon in the group, I wanted to have a custom amount of nested for loops to compare all of the digimon. I tried to write a recursive function that could do any amount of nested loops through the digimon list.
+
+```python
+def num_for_loop(n, list):
+  if n > 0:
+    for i in range(len(list)):
+          num_for_loop(n-1, list)
+  else:
+    # find digimon
+  
+```
+I struggled to keep track of the indices to compare the digimon and ultimately settled on keeping the max number of digimon in the group as 3.
+
+I have three nested for loops that loop through my list of digimon. First I check that there are no duplicates.When the sum of the attacks of the three digimon are greater than the minimum and the sum of the memory of the three digimon are under the maximum, I return info about the digimon:
+```python
+ for i in range(len(atk)):
+        for j in range(len(atk)):
+            for k in range(len(atk)):
+                if i != j and j != k and i != k:
+                    if (atk[i][0] + atk[j][0] + atk[k][0] >= min_attack) and (atk[i][1] + atk[j][1] + atk[k][1] <= max_memory):
+                        return # Digimon info
+  
+```
+
+The function works effectively for any given attack and memory. It is however a brute force method and only works for teams of three digimon.
+
+
+---
+
+My main takeaways from this lab were:
+- How (and why) to type cast.
+- How to use the sort function in python.
+- Using github as version control and markdown pages.

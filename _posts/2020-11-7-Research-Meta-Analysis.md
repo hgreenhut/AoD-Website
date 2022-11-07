@@ -16,18 +16,28 @@ Author: Henry Greenhut
 
 ---
 1. What are the null and alternative hypotheses?
+<br/>
 Null hypothesis: There is no correlation between playing chess and intelligence
+<br/>
 Alternative hypotheses: Chess players are generally more or less intelligent than non-chess players
 
 2. Who is collecting and analyzing this data?
+<br/>
 This study is a meta-analysis of seven other studies which compare some intelligence metric between chess-players and non-chess players. The meta-analysis is done by six university graduates: Giovanni Sala, Alexander P. Burgoyne, Brooke N. Macnamara, David Z. Hambrick, Guillermo Campitelli, and Fernand Gobet.
+<br/>
 3. What datasets does this study reference or use? Are these datasets available to the public?
+<br/>
 This paper analyses seven studies conducted between 1987 and 2016. Each of these studies created their own data by administering intelligence tests to chess players & non-chess players. All of the data is available to the public, although most is behind paywalls.
+<br/>
 
 4. Why are they interested in this data?
+<br/>
 The overarching question that drives this meta-analysis is whether experts are inherently more intellegent than non-experts, and whether the counter-argument that experts score higher on intelligence tests because to become an expert, you have to first pass tests to receive training. Chess is the chosen subject-matter because there are no intelligence tests you have to pass to train chess.
+<br/>
 5. What data is being recorded? What data might be left out?
+<br/>
 The criteria ...
+<br/>
 6. What evidence did they present to back up their conclusions?
 7. How was this study funded?
 8. Do you think publish or perish had an effect on this study?

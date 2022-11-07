@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Digimon
+title: Research Meta Analysis
 subtitle: Lab 2
 # gh-repo: daattali/beautiful-jekyll
 # gh-badge: [star, fork, follow]

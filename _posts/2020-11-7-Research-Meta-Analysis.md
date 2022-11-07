@@ -37,10 +37,15 @@ The overarching question that drives this meta-analysis is whether experts are i
 5. What data is being recorded? What data might be left out?
 <br/>
 The criteria to be included in the meta-analysis was that the study must compare chess-players and non-chess players, must administer some test of intelligence, and must contain enough data to calculate an effect size. The chess players ranged from middle schoolers to chess masters.
-
 <br/>
 6. What evidence did they present to back up their conclusions?
-
+The meta-analysis concluded that chess players' overall cognitive ability is higher than their same-aged non-chess playing counterparts, with a p value below 0.001. They took into account 7 different studies done on different skill levels with different intelligence tests administered. However, the researchers justify the comparison of different intelligence tests by referrencing other studies which prove that the results are comparable.
 7. How was this study funded?
 $12 compensation
 8. Do you think publish or perish had an effect on this study?
+I think "publish or perish" exists on some levels in all scientific papers.
+looked at publication bias
+still could choose which studies to include at their discretion
+some studies did imply no correlation (supported null hypothesis)
+For example, by picking an choosing whether or not to include Doll & Mayr, the P value shot up to 0.009.
+They do openly discuss the limitations of the study, and that the only question they've actually answered is about chess players specifically, not experts in general.

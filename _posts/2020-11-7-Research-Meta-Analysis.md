@@ -32,7 +32,7 @@ Alternative hypotheses: Chess players are generally more or less intelligent tha
 
 2. Who is collecting and analyzing this data?
 <br/>
-This study is a meta-analysis of seven other studies which compare the results of some intelligence test between chess-players and non-chess players. The meta-analysis is done by six university graduates: Giovanni Sala, Alexander P. Burgoyne, Brooke N. Macnamara, David Z. Hambrick, Guillermo Campitelli, and Fernand Gobet. They reference the studies by the name of their primary researchers, such as Anderson, and Doll and Mayr, but it is unclear in those studies who physically collects the data. One [study](https://www.jstor.org/stable/10.5406/amerjpsyc.124.2.0213?seq=1#metadata_info_tab_contents), for instance, mentions that chess players were recruited from a local chess club and brought into a lab room, but does not name who gives the test
+This study is a meta-analysis of seven other studies which compare the results of some intelligence test between chess-players and non-chess players. The meta-analysis is done by six university graduates: Giovanni Sala, Alexander P. Burgoyne, Brooke N. Macnamara, David Z. Hambrick, Guillermo Campitelli, and Fernand Gobet. They reference the studies by the name of their primary researchers, such as Anderson, and Doll and Mayr, but it is unclear in those studies who physically collects the data. One [study](https://www.jstor.org/stable/10.5406/amerjpsyc.124.2.0213?seq=1#metadata_info_tab_contents), for instance, mentions that chess players were recruited from a local chess club and brought into a lab room, but does not name who administered the test.
 <br/>
 3. What datasets does this study reference or use? Are these datasets available to the public?
 <br/>

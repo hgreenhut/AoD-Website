@@ -52,8 +52,7 @@ The criteria to be included in the meta-analysis was that the study must compare
 <br/>
 6. What evidence did they present to back up their conclusions?
 <br/>
-The meta-analysis concluded that chess players' overall cognitive ability is higher than their same-aged non-chess playing counterparts, with a p value below 0.001. They took into account 7 different studies done on different skill levels with different intelligence tests administered. The different studies used different tests of intelligence. However, the researchers behind the meta-analysis claim that the results are comparable by referencing a separate study which proved that there is the strong correlation between the different tests used.
-
+The meta-analysis concluded that chess players' overall cognitive ability is higher than their same-aged non-chess playing counterparts, with a p value below 0.001. They took into account 7 different studies done on different skill levels with different intelligence tests administered. The different studies used different tests of intelligence. However, the researchers behind the meta-analysis claim that the results are comparable by referencing a separate study which proved that there is the strong correlation between the different tests used
 <br/>
 7. How was this study funded?
 Funding for the meta-analysis and for the studies the meta-analysis cites is not clear. The study conducted by Campitelli and Labollita, for example, mentions that they granted a $12 compensation to the chess players they studied, but do not cite any funding.

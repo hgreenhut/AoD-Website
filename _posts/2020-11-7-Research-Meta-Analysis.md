@@ -12,6 +12,15 @@ Author: Henry Greenhut
 <br/>
 
 ## Are chess players smarter than non-chess players? A meta-analysis. ##
+
+Giovanni Sala, Alexander P. Burgoyne, Brooke N. Macnamara, David Z. Hambrick, Guillermo Campitelli, Fernand Gobet,
+Checking the “Academic Selection” argument. Chess players outperform non-chess players in cognitive skills related to intelligence: A meta-analysis,
+Intelligence,
+Volume 61,
+2017,
+Pages 130-139,
+ISSN 0160-2896,
+https://doi.org/10.1016/j.intell.2017.01.013.
 [Research Paper](https://reader.elsevier.com/reader/sd/pii/S0160289616301635?token=86F16125186C1BCBE67F2AC68C7B2045B53E7FC4460912DA075BB7907886111FE9D2599887B22BDF3B42219A463205F7&originRegion=us-east-1&originCreation=20221106213613)
 
 ---

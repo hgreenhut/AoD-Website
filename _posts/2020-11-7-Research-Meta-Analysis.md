@@ -56,7 +56,7 @@ The meta-analysis concluded that chess players' overall cognitive ability is hig
 
 <br/>
 7. How was this study funded?
-Funding for the meta-analysis and for the studies the meta-analysis cites is not clear. The study conducted by Campitelli and Labollita, for example, granted a $12 compensation to the chess players they studied, but do not cite any funding. 
+Funding for the meta-analysis and for the studies the meta-analysis cites is not clear. The study conducted by Campitelli and Labollita, for example, mentions that they granted a $12 compensation to the chess players they studied, but do not cite any funding.
 <br/>
 8. Do you think publish or perish had an effect on this study?
 <br/>

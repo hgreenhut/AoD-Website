@@ -39,13 +39,15 @@ The overarching question that drives this meta-analysis is whether experts are i
 The criteria to be included in the meta-analysis was that the study must compare chess-players and non-chess players, must administer some test of intelligence, and must contain enough data to calculate an effect size. The chess players ranged from middle schoolers to chess masters.
 <br/>
 6. What evidence did they present to back up their conclusions?
-The meta-analysis concluded that chess players' overall cognitive ability is higher than their same-aged non-chess playing counterparts, with a p value below 0.001. They took into account 7 different studies done on different skill levels with different intelligence tests administered. However, the researchers justify the comparison of different intelligence tests by referrencing other studies which prove that the results are comparable.
+<br/>
+The meta-analysis concluded that chess players' overall cognitive ability is higher than their same-aged non-chess playing counterparts, with a p value below 0.001. They took into account 7 different studies done on different skill levels with different intelligence tests administered. The researchers justify the comparison of different intelligence tests by referrencing other studies which prove that the results are comparable.
+<br/>
 7. How was this study funded?
-$12 compensation
+Funding for the meta-analysis and for the studies the meta-analysis cites is not clear. The study conducted by Campitelli and Labollita, for example, granted a $12 compensation to the chess players they studied, but do not cite any funding. 
+<br/>
 8. Do you think publish or perish had an effect on this study?
-I think "publish or perish" exists on some levels in all scientific papers.
-looked at publication bias
-still could choose which studies to include at their discretion
-some studies did imply no correlation (supported null hypothesis)
-For example, by picking an choosing whether or not to include Doll & Mayr, the P value shot up to 0.009.
-They do openly discuss the limitations of the study, and that the only question they've actually answered is about chess players specifically, not experts in general.
+<br/>
+I think "publish or perish" applies to all scientific papers to some extent. The article is published to Elsevier, which has many guidelines for publishing, such as "Do your findings advance understanding in a
+specific research field?" which would encourage novel findings. However, the meta-analysis spends significant time on meta-analytic models that investigate whether these studies are influenced by publication bias & outliers. The meta-analysis also describes the limitations of the study -- the main one being the limited data collected in the research studies they cite.
+The p-value for the meta-analysis determined was less than 0.001. However, they describe how removing a study would greatly change the p-value. As they picked between 2287 studies, the p-value likely would be vastly different depending on which studies they evaluate.
+<br/>

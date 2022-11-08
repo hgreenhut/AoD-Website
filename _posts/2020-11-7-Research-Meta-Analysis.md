@@ -26,9 +26,9 @@ https://doi.org/10.1016/j.intell.2017.01.013.
 ---
 1. What are the null and alternative hypotheses?
 <br/>
-Null hypothesis: There is no correlation between playing chess and intelligence
+Null hypothesis: There is no correlation between playing chess and intelligence.
 <br/>
-Alternative hypotheses: Chess players are generally more or less intelligent than non-chess players
+Alternative hypotheses: Chess players are generally more or less intelligent than non-chess players.
 
 2. Who is collecting and analyzing this data?
 <br/>

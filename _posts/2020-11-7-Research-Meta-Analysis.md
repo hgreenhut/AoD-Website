@@ -34,6 +34,7 @@ Alternative hypotheses: Chess players are generally more or less intelligent tha
 <br/>
 This study is a meta-analysis of seven other studies which compare the results of some intelligence test between chess-players and non-chess players. The meta-analysis is done by six university graduates: Giovanni Sala, Alexander P. Burgoyne, Brooke N. Macnamara, David Z. Hambrick, Guillermo Campitelli, and Fernand Gobet. They reference the studies by the name of their primary researchers, such as Anderson, and Doll and Mayr, but it is unclear in those studies who physically collects the data. One [study](https://www.jstor.org/stable/10.5406/amerjpsyc.124.2.0213?seq=1#metadata_info_tab_contents), for instance, mentions that chess players were recruited from a local chess club and brought into a lab room, but does not name who administered the test.
 <br/>
+<br/>
 3. What datasets does this study reference or use? Are these datasets available to the public?
 <br/>
 This paper analyses seven studies conducted between 1987 and 2016. Each of these studies created their own data by administering intelligence tests to chess players & non-chess players. All of the data created is available to the public, although some behind a paywall. For one study, they emailed the researcher and recieved unpublished data, although it is published now. The meta-analysis is also transparent about any manipulation done to the data.
@@ -42,6 +43,7 @@ This paper analyses seven studies conducted between 1987 and 2016. Each of these
 4. Why are they interested in this data?
 <br/>
 The overarching question that drives this meta-analysis is whether experts are inherently more intellegent than non-experts; or, whether experts tend to score higher on intelligence tests simply because to become an expert, you often first have to do well on tests to recieve training in the first place (ex. University students have to score well on standardized tests to be admitted to schools and then become experts). Chess is the chosen subject-matter because there are no intelligence tests you have to pass to learn chess & become an expert.
+<br/>
 <br/>
 5. What data is being recorded? What data might be left out?
 <br/>

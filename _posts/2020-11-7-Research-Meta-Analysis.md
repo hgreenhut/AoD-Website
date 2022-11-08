@@ -63,4 +63,5 @@ Funding for the meta-analysis and for the studies the meta-analysis cites is not
 I think "publish or perish" applies to all scientific papers to some extent. The article is published to Elsevier, which has many guidelines for publishing, such as "Do your findings advance understanding in a
 specific research field?" which would encourage novel findings. However, the meta-analysis spends significant time on meta-analytic models that investigate whether these studies are influenced by publication bias & outliers. The meta-analysis also describes the limitations of the study -- the main one being the limited data collected in the research studies they cite.
 The p-value for the meta-analysis determined was less than 0.001. However, they describe how removing a study would greatly change the p-value. As they picked between 2287 studies, the p-value likely would be vastly different depending on which studies they evaluate.
+I do think that this is a valuable and carefully-done meta-analysis.
 <br/>

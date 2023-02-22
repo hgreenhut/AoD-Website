@@ -190,9 +190,9 @@ The Sicilian Defense is still strikingly effective for black, although interesti
 I found the win rates for the most popular openings, but which openings are the best? I ran every shortened opening through my win percentage function by looping through short_openings["opening"].unique() and created a new dataframe with the win percentage of every opening.
 
 Then, I can sort the rows by their win percentage:
-![Sorted by win percentage](../assets/img/best-openings.png)
+![Sorted by win percentage](../assets/img/correct-best-openings.png)
 
-A few rows stand out -- particularly the openings with a 0 win percentage. I had to investigate further -- out of millions of chess games, how did nobody win with the Amar Gambit? I discovered that in January of 2017, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 points higher than them. They lost horribly, and for good reason. It's an atrocious opening. Please enjoy the gif I generated of their game: 
+A few rows stand out -- particularly the openings with a 0 win percentage. I had to investigate further. Out of millions of chess games, how did nobody win with the Amar Gambit? I discovered that in January of 2017, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 elo higher than them. They lost horribly, and for good reason. It's an atrocious opening. Please enjoy the gif I generated of their game: 
 
 ![Popular First Moves](../assets/img/amar-gambit.gif)
 
@@ -200,6 +200,7 @@ If there is one takeaway from this dataset, it is to not play the Amar gambit. T
 
 At the top of the dataframe sits the Lemming Defense, with a stunning 71% win rate. I'm curious about how different rating ranges do with the Lemming Defense.
 
+**PART 5: Rating Ranges**
 First, I created a dataframe of only games that followed the Lemming Defense
 
 ```python
@@ -214,20 +215,22 @@ lemming["average-rating"] = (lemming["white_elo"] + lemming["black_elo"])/2
 
 Using .max(), .min(), and .mean(), I found that the highest average rating was 2525, the lowest was 836, and the average was around 1400.
 
-I created five rating categories and divided the dataframe of lemming openings into five dataframes by filtering for the correct average rating range for each category:
+I created five rating categories and divided the dataframe of lemming openings into five dataframes by filtering for the rating range designated for each category:
 
 ```python
 lemming_1000 = lemming[lemming["average-rating"].between(600, 1000)]
 ```
 
-And then, I ran each dataframe through the "win" function I built earlier and stored the returned percent in a "percent column" list. Then, I created a new dataframe with that percent column and a "rating category" column:
+And then, similarly to the opening analysis before, I ran each dataframe through the "win" function I built earlier and stored the returned percent in a "percent column" list. Then, I created a new dataframe with that percent column and a "rating category" column:
 
-![Rating categories table](../assets/img/rating-categories.png)
+![Rating categories table](../assets/img/correct-rating-categories.png)
 
 Finally, I plotted this table on a barplot, with the rating category on the x-axis and the percentages on the y-axis.
 
 
-![Rating categories plot](../assets/img/rating-categories-plot.png)
+![Rating categories plot](../assets/img/correct-rating-categories-plot.png)
+
+And we can see that the Lemming Defense thrives until the players reach around 1800 elo. At the highest level, it is not very successful for white.
 
 
 

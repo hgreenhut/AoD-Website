@@ -43,4 +43,50 @@ games = data.split("[Event")
 del games[0]
 ```
 
+Next, I built a function to extract the different properties of the game. It takes two substrings as parameters. It finds the index of the first substring, and then finds the first index of the second substring that's after the index of the first substring:
 
+```python
+def find(game, sub1, sub2):
+    idx1 = game.index(sub1)
+    idx2 = game.find(sub2,idx1+1)
+    substring = ""
+    for idx in range(idx1 + len(sub1) + 1, idx2):
+        substring = substring + i[idx]
+    return substring
+```
+
+Then, I looped through all of the games and extracted each property like this:
+```python
+# Finding white's name
+    sub1 = "[White "
+    sub2 = "\"]"
+    white_name = find(i, sub1, sub2)
+    white_names.append(white_name)
+```
+
+This works for all of the properties I needed except for the moves, which aren't easily accessible. "1." doesn't work as the first substring because it appears in the date sometimes. So, I used the double empty lines as the substrings, and extracted two characters ahead of usual:
+
+```python
+    sub1 = "\n\n"
+    sub2 = "\n\n"
+    idx1 = i.index(sub1)
+    idx2 = i.find(sub2,idx1+1)
+    moves = ""
+    for idx in range(idx1 + len(sub1) + 3, idx2):
+        moves = moves + i[idx]
+    all_moves.append(moves)
+```
+
+Finally, once I had created lists for all of the properties, I added them to a dataframe, and converted that dataframe to a csv:
+
+
+```python
+df = pd.DataFrame()
+df["white_name"] = white_names
+# ..all of the other properties...
+df["moves"] = all_moves
+df.to_csv("lichess_database_2017-01.csv")
+
+# Step 2: Analyzing popular opening variations
+
+The results of the games (as in, whether white won, black won, or it was a draw)

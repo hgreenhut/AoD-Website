@@ -182,3 +182,9 @@ short_openings = df
 short_openings["opening"] = df["opening"].apply(strip_opening)
 ```
 
+Now that the openings are formatted the way we want, we can plot the top five now most popular openings against their win percentage the same way we did before. This leaves us with this graph:
+
+![Popular First Moves](../assets/img/popular-first-moves-plot.png)
+
+
+

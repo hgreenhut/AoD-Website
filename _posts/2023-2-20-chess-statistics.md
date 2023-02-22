@@ -14,7 +14,7 @@ Author: Henry Greenhut
 ---
 Lichess, a free, open source, online chess platform, [publishes](https://database.lichess.org/) a database of every game played on their website every month. I chose a dataset of over 10 million chess games from January of 2017. Using Pandas and Seaborn, I'm interested in the relationships between openings played, the ratings of the players, and the results of the games.
 
-**STEP 1: PGN -> CSV**
+**PART 1: PGN -> CSV**
 Lichess stores the games in their database as a PGN (portable game notation). PGN files are formatted like this: 
 
 ```python
@@ -88,7 +88,7 @@ df["moves"] = all_moves
 df.to_csv("lichess_database_2017-01.csv")
 ```
 
-**STEP 2: Cleaning the dataset**
+**PART 2: Cleaning the dataset**
 
 Firstly, I opened my newly created csv file as a dataframe.
 
@@ -105,7 +105,7 @@ df = df.loc[(df["results"] == 1) | (df["results"] == -1) | (df["results"] == 0)]
 I now calcualted the mean of the results. As expect, white tends to win more often than black:
 ![Results Mean](assets/img/results-mean.png)
 
-**STEP 3: Popular Opening Variations**
+**PART 3: Popular Opening Variations**
 
 I'm interested in the success rate of the most popular openings. First, I found the five most popular openings: 
 
@@ -138,3 +138,24 @@ opening_percent = pd.DataFrame()
 opening_percent["opening"] = opening_col
 opening_percent["percent"] = percent_col
 ```
+![Popular Opening Table](assets/img/popular-opening-table.png)
+
+Now I can display this table as a barplot. I imported matplotlib to be able to rotate the axis so the long opening names were visible, to zoom in onto the relevant portion of hte y-axis, and to display the percentage values on the chart. 
+
+```python
+import matplotlib as plt
+o = sns.barplot(data=opening_percent, x="opening", y="percent")
+o.set_xticklabels(labels = o.get_xticklabels(), rotation = 50)
+o.set_ylim(40, 60)
+for i in o.containers:
+    o.bar_label(i,)
+o
+```
+
+![Popular Opening Plot](assets/img/popular-openings-plot.png)
+
+This is interesting, but anyone that plays chess will know that the Horwitz Defense can't be in the top 5 most played openings. This happened because there are dozens of variations for each opening, and openings like the Horwitz Defense that don't have a lot of named variations are higher on the list.
+
+**PART 4: Popular Opening Moves**
+
+I'm interested in seeing the success rates of the most popular opening moves. To do this, I have to simplify each long opening varation.

@@ -152,7 +152,9 @@ for i in o.containers:
 o
 ```
 
-![Popular Opening Plot](assets/img/popular-openings-plot.png)
+![Popular Opening Plot](../assets/img/popular-openings-plot.png)
+![Popular Opening Plot](../assets/img/popular-openings-plot.png){:class="img-responsive"}
+
 
 This is interesting, but anyone that plays chess will know that the Horwitz Defense can't be in the top 5 most played openings. This happened because there are dozens of variations for each opening, and openings like the Horwitz Defense that don't have a lot of named variations are higher on the list.
 

@@ -88,7 +88,7 @@ df["moves"] = all_moves
 df.to_csv("lichess_database_2017-01.csv")
 ```
 
-**STEP 1: Cleaning the dataset**
+**STEP 2: Cleaning the dataset**
 
 Firstly, I opened my newly created csv file as a dataframe.
 
@@ -103,4 +103,38 @@ df = df.loc[(df["results"] == 1) | (df["results"] == -1) | (df["results"] == 0)]
 ```
 
 I now calcualted the mean of the results. As expect, white tends to win more often than black:
-![Results Mean](/assets/img/results-mean.png)
+![Results Mean](assets/img/results-mean.png)
+
+**STEP 3: Popular Opening Variations**
+
+I'm interested in the success rate of the most popular openings. First, I found the five most popular openings: 
+
+```python
+openings = df['opening'].value_counts()[:5].index.tolist()
+```
+Then, I created a new dataframe with only games that followed one of these openings:
+```python
+popular_openings = df.loc[df['opening'].isin(openings)]
+```
+
+Now, I want to find to be able to find the win percentage of any opening. I created a method that takes a dataframe and an opening and returns the win percentage of that opening. First, it creates a new dataset with only games that followed the selected opening. Then it divides the number of games white wins with that opening by the number of games that ended in either white or black winning. shape[0] gives the number of rows.
+
+```python
+def win(df, opening):
+    relevant = df[df["opening"] == opening]
+    return relevant[df["results"] == 1].shape[0]/relevant[df["results"] != 0].shape[0]
+```
+
+Then, I passed each of the five most common opening variation through this function, and created a new dataframe with the openings in one column and their win percentage in the other.
+
+```python
+opening_col = []
+percent_col = []
+for i in popular_openings["opening"].unique():
+    opening_col.append(i)
+    percent_col.append(win(popular_openings, i)*100)
+
+opening_percent = pd.DataFrame()
+opening_percent["opening"] = opening_col
+opening_percent["percent"] = percent_col
+```

@@ -234,7 +234,7 @@ And we can see that the Lemming Defense thrives until the players reach around 1
 
 **Sources used**
 
-* substring between two substrings: [](https://www.geeksforgeeks.org/)python-extract-string-between-two-substrings/
+* substring between two substrings: [https://www.geeksforgeeks.org/)](https://www.geeksforgeeks.org/)python-extract-string-between-two-substrings/
 * second instance of substring: https://www.naukri.com/learning/articles/how-to-find-second-occurence-of-sub-string-in-python-string/
 * get most frequent values of column: https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column
 * change axis limits on plots: https://www.geeksforgeeks.org/how-to-change-axes-limits-in-seaborn/

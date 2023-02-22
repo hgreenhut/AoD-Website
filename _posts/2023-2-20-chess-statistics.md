@@ -187,7 +187,11 @@ Now that the openings are formatted the way we want, we can plot the top five no
 
 The Sicilian Defense is still strikingly effective for black, although interestingly, including all of its variations increased white's win rate. 
 
+**PART 4: The Best and the Worst**
+I found the win rates for the most popular openings, but which openings are the best? I ran every shortened opening through my win percentage function by looping through short_openings["opening"].unique() and created a new dataframe with the win percentage of every opening.
 
+One thing stands out -- the Amar gambit, with a 0% win percentage. I had to investigate further, and discovered that in January of 2017, out of the millions of games played, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 points higher than them. They lost horribly, and for good reason. It's an atrocious opening. Please enjoy the gif I created of their game: 
 
-One thing stands out -- the Amar gambit, with a 0% win percentage. I had to investigate further,and discovered that in January of 2017, out of the millions of games played, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 points higher than them. They lost horrible, and for good reason. It's an atrocious opening. Please enjoy the gif I created of their game: 
 ![Popular First Moves](../assets/img/amar-gambit.gif)
+
+If there is one takeaway from this dataset, it is to not play the Amar gambit. The sample size is small, but this game speaks for itself.

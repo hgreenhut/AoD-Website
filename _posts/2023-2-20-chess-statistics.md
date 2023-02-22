@@ -93,9 +93,10 @@ The results of the games (as in, whether white won, black won, or it was a draw)
 df['results'].replace(['1-0', '1/2-1/2', '0-1'],
                         [1, 0, -1], inplace=True)
 ```
-There were a few "unterminated" games, which I was not interested in as chess games are supposed to terminate. So, I only kept the games that ended with a win or a draw:
+There were a few "unterminated" and "abandoned" games that I was not interested in:
 ```python
 df = df.loc[(df["results"] == 1) | (df["results"] == -1) | (df["results"] == 0)]
+df = df[df["termination"] != "Abandoned"]
 ```
 
 I now calcualted the mean of the results. As expect, white tends to win more often than black:

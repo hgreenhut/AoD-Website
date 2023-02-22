@@ -9,7 +9,7 @@ subtitle: Lab 3
 ---
 Author: Henry Greenhut
 ---
-Lichess, a free, open source, online chess platform, [publishes](https://database.lichess.org/) a database of every game played on their website every month. I chose a dataset of over 10 million chess games from January of 2017. Using Pandas and Seaborn, I'm interested in the relationships between openings played, the ratings of the players, and the results of the games.
+Lichess, a free, open source, online chess platform, [publishes](https://database.lichess.org/) each month a database of every game played on their website. I chose a dataset of over 10 million chess games from January of 2017. Using Pandas and Seaborn, I will explore the relationships between the openings played, the ratings of the players, and the results of the games.
 
 **PART 1: PGN -> CSV**
 Lichess stores the games in their database as a PGN (portable game notation). PGN files are formatted like this: 
@@ -51,7 +51,7 @@ def find(game, sub1, sub2):
     return substring
 ```
 
-Then, I looped through all of the games and extracted each property like this:
+Then, I looped through all of the games and extracted each property:
 ```python
 # Finding white's name
     sub1 = "[White "
@@ -60,7 +60,7 @@ Then, I looped through all of the games and extracted each property like this:
     white_names.append(white_name)
 ```
 
-This works for all of the properties I needed except for the moves, which aren't easily accessible. "1." doesn't work as the first substring because it appears in the date sometimes. So, I used the double empty lines as the substrings, and extracted two characters ahead of usual:
+This works for all of the properties I needed except for the moves, which aren't easily accessible. "1." doesn't work as the first substring because it can appear in the date. So, I used the double empty lines as the substrings, and extracted two characters ahead of the first substring:
 
 ```python
     sub1 = "\n\n"
@@ -99,12 +99,12 @@ df = df.loc[(df["results"] == 1) | (df["results"] == -1) | (df["results"] == 0)]
 df = df[df["termination"] != "Abandoned"]
 ```
 
-I now calcualted the mean of the results. As expect, white tends to win more often than black:
+As expected, white tends to win more often than black:
 ![Results Mean](../assets/img/results-mean.png)
 
 **PART 3: Popular Opening Variations**
 
-I'm interested in the success rate of the most popular openings. First, I found the five most popular openings: 
+I'm interested in the success rate of popular openings. First, I found the five most popular openings: 
 
 ```python
 openings = df['opening'].value_counts()[:5].index.tolist()
@@ -114,7 +114,7 @@ Then, I created a new dataframe with only games that followed one of these openi
 popular_openings = df.loc[df['opening'].isin(openings)]
 ```
 
-Now, I want to find to be able to find the win percentage of any opening. I created a method that takes a dataframe and an opening and returns the win percentage of that opening. First, it creates a new dataset with only games that followed the selected opening. Then it divides the number of games white wins with that opening by the number of games that ended in either white or black winning. shape[0] gives the number of rows.
+Now, I want to find to be able to find the win percentage of any opening. I created a method that takes a dataframe and an opening and returns the win percentage of that opening from the games in that dataframe. First, it creates a new dataframe with only games that followed the selected opening. Then it divides the number of games white wins with that opening by the number of games that ended in either white or black winning. shape[0] gives the number of rows.
 
 ```python
 def win(df, opening):
@@ -122,7 +122,7 @@ def win(df, opening):
     return relevant[df["results"] == 1].shape[0]/relevant[df["results"] != 0].shape[0]
 ```
 
-Then, I passed each of the five most common opening variation through this function, and created a new dataframe with the openings in one column and their win percentage in the other.
+Then, I passed each of the five most common opening variation through this function, and created a new dataframe with the openings in one column and their win percentage in the other. I used .unique() to run each opening through the function only once.
 
 ```python
 opening_col = []
@@ -137,7 +137,7 @@ opening_percent["percent"] = percent_col
 ```
 ![Popular Opening Table](../assets/img/popular-opening-table.png)
 
-Now I can display this table as a barplot. I imported matplotlib to be able to rotate the axis so the long opening names were visible, to zoom in onto the relevant portion of hte y-axis, and to display the percentage values on the chart. 
+Now I can display this table as a barplot. I imported matplotlib to be able to rotate the axis so the long opening names were visible, to zoom in onto the relevant portion of the y-axis, and to display the percentage values on the chart.
 
 ```python
 import matplotlib as plt
@@ -151,12 +151,13 @@ o
 
 ![Popular Opening Plot](../assets/img/popular-openings-plot.png){:class="img-responsive"}
 
+Fascinatingly, three of the top five most played openings fare better for the person playing with the black pieces, and the Sicilian in particular is lethal. 
 
-This is interesting, but anyone that plays chess will know that the Horwitz Defense can't be in the top 5 most played openings. This happened because there are dozens of variations for each opening, and openings like the Horwitz Defense that don't have a lot of named variations are higher on the list.
+This is interesting, but anyone that plays chess will know that the Horwitz Defense isn't a top 5 most played openings. This happened because chess openings have dozens of variations, and each variation is being counted as its own opening. So, openings like the Horwitz Defense that don't have a lot of named variations are higher on the list.
 
 **PART 4: Popular Opening Moves**
 
-I'm interested in seeing the success rates of the most popular opening moves. To do this, I have to simplify each long opening varation. I built a function that takes an opening as the parameter and strips it to only what's behind the ":", "#", or "," to leave just the initial phrase.
+I'm interested in seeing the success rates of the most popular opening moves. To do this, I have to simplify each long opening varation into its general opening. I built a function that takes an opening as the parameter and strips it to only what's behind the ":", "#", or "," to leave just the initial phrase.
 
 ```python
 def strip_opening(opening):
@@ -179,19 +180,19 @@ short_openings = df
 short_openings["opening"] = df["opening"].apply(strip_opening)
 ```
 
-Now that the openings are formatted the way we want, we can plot the top five now most popular openings against their win percentage the same way we did before. This leaves us with this graph:
+Now that the openings are formatted the way I want, I can find the top five most popular opening moves and plot them against their win percentage the same way that I did before. This leaves us with this graph:
 
 ![Popular First Moves](../assets/img/popular-first-moves-plot.png)
 
-The Sicilian Defense is still strikingly effective for black, although interestingly, including all of its variations increased white's win rate. 
+The Sicilian Defense is still strikingly effective for black, although interestingly, including all of its variations decreased black's win rate. The Scandinavian Defense remains a powerful option, although the Queen's Pawn Game comes out on top.
 
 **PART 4: The Best and the Worst**
 I found the win rates for the most popular openings, but which openings are the best? I ran every shortened opening through my win percentage function by looping through short_openings["opening"].unique() and created a new dataframe with the win percentage of every opening.
 
 Then, I can sort the rows by their win percentage:
-![Sorted by win percentage](../assets/img/popular-first-moves-plot.png)
+![Sorted by win percentage](../assets/img/best-openings.png)
 
-A few rows stand out -- particularly the openings with a 0 win percentage.I had to investigate further -- out of millions of chess games, how did nobody win with the Amar Gambit? I discovered that in January of 2017, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 points higher than them. They lost horribly, and for good reason. It's an atrocious opening. Please enjoy the gif I generated of their game: 
+A few rows stand out -- particularly the openings with a 0 win percentage. I had to investigate further -- out of millions of chess games, how did nobody win with the Amar Gambit? I discovered that in January of 2017, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 points higher than them. They lost horribly, and for good reason. It's an atrocious opening. Please enjoy the gif I generated of their game: 
 
 ![Popular First Moves](../assets/img/amar-gambit.gif)
 

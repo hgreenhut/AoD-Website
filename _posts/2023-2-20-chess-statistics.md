@@ -86,7 +86,21 @@ df["white_name"] = white_names
 # ..all of the other properties...
 df["moves"] = all_moves
 df.to_csv("lichess_database_2017-01.csv")
+```
 
-# Step 2: Analyzing popular opening variations
+**STEP 1: Cleaning the dataset**
 
-The results of the games (as in, whether white won, black won, or it was a draw)
+Firstly, I opened my newly created csv file as a dataframe.
+
+The results of the games (as in, whether white won, black won, or it was a draw) are stored with hyphens and fractions, which isn't easy to work with. I replaced these values with the numbers -1, 0, and 1:
+```python
+df['results'].replace(['1-0', '1/2-1/2', '0-1'],
+                        [1, 0, -1], inplace=True)
+```
+There were a few "unterminated" games, which I was not interested in as chess games are supposed to terminate. So, I only kept the games that ended with a win or a draw:
+```python
+df = df.loc[(df["results"] == 1) | (df["results"] == -1) | (df["results"] == 0)]
+```
+
+I now calcualted the mean of the results. As expect, white tends to win more often than black:
+![Results Mean](/assets/img/results-mean.png)

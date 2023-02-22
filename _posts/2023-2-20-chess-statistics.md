@@ -8,16 +8,13 @@ subtitle: Lab 3
 # comments: true
 ---
 Author: Henry Greenhut
-
-<br/>
-
 ---
 Lichess, a free, open source, online chess platform, [publishes](https://database.lichess.org/) a database of every game played on their website every month. I chose a dataset of over 10 million chess games from January of 2017. Using Pandas and Seaborn, I'm interested in the relationships between openings played, the ratings of the players, and the results of the games.
 
 **PART 1: PGN -> CSV**
 Lichess stores the games in their database as a PGN (portable game notation). PGN files are formatted like this: 
 
-```python
+```
 [Event "F/S Return Match"]
 [Site "Belgrade, Serbia JUG"]
 [Date "1992.11.04"]

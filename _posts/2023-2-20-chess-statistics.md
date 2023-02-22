@@ -26,8 +26,7 @@ Lichess stores the games in their database as a PGN (portable game notation). PG
 [Black "Spassky, Boris V."]
 [Result "1/2-1/2"]
 
-1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 {This opening is called the Ruy Lopez.}
-4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Nb8 10. d4 Nbd7
 11. c4 c6 12. cxb5 axb5 13. Nc3 Bb7 14. Bg5 b4 15. Nb1 h6 16. Bh4 c5 17. dxe5
 Nxe4 18. Bxe7 Qxe7 19. exd6 Qf6 20. Nbd2 Nxd6 21. Nc4 Nxc4 22. Bxc4 Nb6
 23. Ne5 Rae8 24. Bxf7+ Rxf7 25. Nxf7 Rxe1+ 26. Qxe1 Kxf7 27. Qe3 Qg5 28. Qxg5
@@ -186,5 +185,9 @@ Now that the openings are formatted the way we want, we can plot the top five no
 
 ![Popular First Moves](../assets/img/popular-first-moves-plot.png)
 
+The Sicilian Defense is still strikingly effective for black, although interestingly, including all of its variations increased white's win rate. 
 
 
+
+One thing stands out -- the Amar gambit, with a 0% win percentage. I had to investigate further,and discovered that in January of 2017, out of the millions of games played, the Amar gambit was played exactly once, by the daring "supersebi7" against someone rated nearly 300 points higher than them. They lost horrible, and for good reason. It's an atrocious opening. Please enjoy the gif I created of their game: 
+![Popular First Moves](../assets/img/amar-gambit.gif)

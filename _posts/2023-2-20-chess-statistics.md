@@ -234,9 +234,9 @@ And we can see that the Lemming Defense thrives until the players reach around 1
 
 **Sources used**
 
-* substring between two substrings: [https://www.geeksforgeeks.org/python-extract-string-between-two-substrings/)](https://www.geeksforgeeks.org/python-extract-string-between-two-substrings/)
-* second instance of substring: [https://www.naukri.com/learning/articles/how-to-find-second-occurence-of-sub-string-in-python-string/]
-* get most frequent values of column: https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column
-* change axis limits on plots: https://www.geeksforgeeks.org/how-to-change-axes-limits-in-seaborn/
-* display values on plots: https://www.geeksforgeeks.org/how-to-show-values-on-seaborn-barplot/
-* apply function to entire dataframe column: https://pandas.pydata.org/docs/reference/api/pandas.Series.apply.html
+* substring between two substrings: [https://www.geeksforgeeks.org/python-extract-string-between-two-substrings/](https://www.geeksforgeeks.org/python-extract-string-between-two-substrings/)
+* second instance of substring: [https://www.naukri.com/learning/articles/how-to-find-second-occurence-of-sub-string-in-python-string/](https://www.naukri.com/learning/articles/how-to-find-second-occurence-of-sub-string-in-python-string/)
+* get most frequent values of column: [https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column](https://stackoverflow.com/questions/48590268/pandas-get-the-most-frequent-values-of-a-column)
+* change axis limits on plots: [https://www.geeksforgeeks.org/how-to-change-axes-limits-in-seaborn/](https://www.geeksforgeeks.org/how-to-change-axes-limits-in-seaborn/)
+* display values on plots: [https://www.geeksforgeeks.org/how-to-show-values-on-seaborn-barplot/](https://www.geeksforgeeks.org/how-to-show-values-on-seaborn-barplot/)
+* apply function to entire dataframe column: [https://pandas.pydata.org/docs/reference/api/pandas.Series.apply.html](https://pandas.pydata.org/docs/reference/api/pandas.Series.apply.html)

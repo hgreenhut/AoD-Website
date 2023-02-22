@@ -230,7 +230,7 @@ Finally, I plotted this table on a barplot, with the rating category on the x-ax
 
 ![Rating categories plot](../assets/img/correct-rating-categories-plot.png)
 
-And we can see that the Lemming Defense thrives until the players reach around 1800 elo. At the highest level, it is not very successful for white.
+And we can see that the Lemming Defense thrives until the players reach around 1800 elo. At the highest level, it is usually unsuccessful for white.
 
 
 

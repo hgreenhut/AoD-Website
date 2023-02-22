@@ -103,7 +103,7 @@ df = df.loc[(df["results"] == 1) | (df["results"] == -1) | (df["results"] == 0)]
 ```
 
 I now calcualted the mean of the results. As expect, white tends to win more often than black:
-![Results Mean](assets/img/results-mean.png)
+![Results Mean](../assets/img/results-mean.png)
 
 **PART 3: Popular Opening Variations**
 
@@ -138,7 +138,7 @@ opening_percent = pd.DataFrame()
 opening_percent["opening"] = opening_col
 opening_percent["percent"] = percent_col
 ```
-![Popular Opening Table](assets/img/popular-opening-table.png)
+![Popular Opening Table](../assets/img/popular-opening-table.png)
 
 Now I can display this table as a barplot. I imported matplotlib to be able to rotate the axis so the long opening names were visible, to zoom in onto the relevant portion of hte y-axis, and to display the percentage values on the chart. 
 
@@ -152,7 +152,6 @@ for i in o.containers:
 o
 ```
 
-![Popular Opening Plot](../assets/img/popular-openings-plot.png)
 ![Popular Opening Plot](../assets/img/popular-openings-plot.png){:class="img-responsive"}
 
 
@@ -160,4 +159,26 @@ This is interesting, but anyone that plays chess will know that the Horwitz Defe
 
 **PART 4: Popular Opening Moves**
 
-I'm interested in seeing the success rates of the most popular opening moves. To do this, I have to simplify each long opening varation.
+I'm interested in seeing the success rates of the most popular opening moves. To do this, I have to simplify each long opening varation. I built a function that takes an opening as the parameter and strips it to only what's behind the ":", "#", or "," to leave just the initial phrase.
+
+```python
+def strip_opening(opening):
+    final = ""
+    if ":" in opening:
+        final = opening.split(":")[0]
+    elif "#" in opening:
+        final = opening.split(" #")[0]
+    elif "," in opening:
+        final = opening.split(",")[0]
+    else:
+        final = opening
+    return final
+```
+
+Then, I copied the dataframe and applied the function to the openings column:
+
+```python
+short_openings = df
+short_openings["opening"] = df["opening"].apply(strip_opening)
+```
+

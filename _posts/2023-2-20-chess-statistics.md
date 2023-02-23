@@ -31,7 +31,7 @@ hxg5 29. b3 Ke6 30. a3 Kd6 31. axb4 cxb4 32. Ra5 Nd5 33. f3 Bc8 34. Kf2 Bf5
 35. Ra7 g6 36. Ra6+ Kc5 37. Ke1 Nf4 38. g3 Nxh3 39. Kd2 Kb5 40. Rd6 Kc5 41. Ra6
 Nf2 42. g4 Bd3 43. Re6 1/2-1/2
 ```
-I created a python script to convert this csv to a pgn. First, I divide the database into its multiple games. I delete the first one because that's everything before the first "[Event", which is not a game.
+I created a python script to convert this pgn to a csv. First, I divide the database into its multiple games. I delete the first one because that's everything before the first "[Event", which is not a game.
 ```python
 with open('datasets/lichess_db_standard_rated_2017-01.pgn', 'r') as f:
     data = f.read()

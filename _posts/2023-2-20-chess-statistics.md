@@ -73,7 +73,7 @@ This works for all of the properties I needed except for the moves, which aren't
     all_moves.append(moves)
 ```
 
-Finally, once I had created lists for all of the properties, I added them to a dataframe, and converted that dataframe to a csv:
+Finally, once I had created lists for all of the properties, I added them as columns to a dataframe, and converted that dataframe into a csv:
 
 
 ```python
@@ -86,9 +86,9 @@ df.to_csv("lichess_database_2017-01.csv")
 
 **PART 2: Cleaning the dataset**
 
-Firstly, I opened my newly created csv file as a dataframe.
+I opened my newly created csv file as a dataframe.
 
-The results of the games (as in, whether white won, black won, or it was a draw) are stored with hyphens and fractions, which isn't easy to work with. I replaced these values with the numbers -1, 0, and 1:
+The results of the games (as in, whether white won, black won, or it was a draw) are stored with hyphens and fractions, which aren't easy to work with. I replaced these values with the numbers -1, 0, and 1:
 ```python
 df['results'].replace(['1-0', '1/2-1/2', '0-1'],
                         [1, 0, -1], inplace=True)
@@ -151,9 +151,9 @@ o
 
 ![Popular Opening Plot](../assets/img/popular-openings-plot.png){:class="img-responsive"}
 
-Fascinatingly, three of the top five most played openings fare better for the person playing with the black pieces, and the Sicilian in particular is lethal. 
+Fascinatingly, three of the top five most played openings fare better for the person playing with the black pieces; the Sicilian in particular is lethal. 
 
-This is interesting, but anyone that plays chess will know that the Horwitz Defense isn't a top 5 most played openings. This happened because chess openings have dozens of variations, and each variation is being counted as its own opening. So, openings like the Horwitz Defense that don't have a lot of named variations are higher on the list.
+This chart is interesting, but anyone that plays chess will know that the Horwitz Defense isn't one of the most played openings. This happened because chess openings have dozens of variations, and each variation is being counted as its own opening. So, openings like the Horwitz Defense that don't have a lot of named variations are higher on the list.
 
 **PART 4: Popular Opening Moves**
 
@@ -187,6 +187,7 @@ Now that the openings are formatted the way I want, I can find the top five most
 The Sicilian Defense is still strikingly effective for black, although interestingly, including all of its variations decreased black's win rate. The Scandinavian Defense remains a powerful option, although the Queen's Pawn Game comes out on top.
 
 **PART 4: The Best and the Worst**
+
 I found the win rates for the most popular openings, but which openings are the best? I ran every shortened opening through my win percentage function by looping through short_openings["opening"].unique() and created a new dataframe with the win percentage of every opening.
 
 Then, I can sort the rows by their win percentage:
@@ -201,6 +202,7 @@ If there is one takeaway from this dataset, it is to not play the Amar gambit. T
 At the top of the dataframe sits the Lemming Defense, with a stunning 71% win rate. I'm curious about how different rating ranges do with the Lemming Defense.
 
 **PART 5: Rating Ranges**
+
 First, I created a dataframe of only games that followed the Lemming Defense
 
 ```python
@@ -230,7 +232,7 @@ Finally, I plotted this table on a barplot, with the rating category on the x-ax
 
 ![Rating categories plot](../assets/img/correct-rating-categories-plot.png)
 
-And we can see that the Lemming Defense thrives until the players reach around 1800 elo. At the highest level, it is usually unsuccessful for white.
+And we can see that the Lemming Defense thrives until the players reach around 1800 elo. At the highest level, it is usually unsuccessful for white -- but at least still better than the Amar Gambit.
 
 **Sources used**
 

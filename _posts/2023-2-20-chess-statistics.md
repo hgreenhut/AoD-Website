@@ -9,7 +9,7 @@ subtitle: Lab 3
 ---
 Author: Henry Greenhut
 ---
-Lichess, a free, open source, online chess platform, [publishes](https://database.lichess.org/) each month a database of every game played on their website. I chose a dataset of over 10 million chess games from January of 2017. Using Pandas and Seaborn, I will explore the relationships between the openings played, the ratings of the players, and the results of the games.
+Lichess, a free, open source, online chess platform, [publishes](https://database.lichess.org/) a database of every game played on their website each month. I chose a dataset of over 10 million chess games from January of 2017. Using Pandas and Seaborn, I will explore the relationships between the openings played, the ratings of the players, and the results of the games.
 
 **PART 1: PGN -> CSV**
 Lichess stores the games in their database as a PGN (portable game notation). PGN files are formatted like this: 
@@ -54,6 +54,7 @@ def find(game, sub1, sub2):
 Then, I looped through all of the games and extracted each property:
 ```python
 # Finding white's name
+for count, i in enumerate(games):
     sub1 = "[White "
     sub2 = "\"]"
     white_name = find(i, sub1, sub2)
@@ -88,7 +89,7 @@ df.to_csv("lichess_database_2017-01.csv")
 
 I opened my newly created csv file as a dataframe.
 
-The results of the games (as in, whether white won, black won, or it was a draw) are stored with hyphens and fractions, which aren't easy to work with. I replaced these values with the numbers -1, 0, and 1:
+The results of the games (whether white won, black won, or it was a draw) are stored with hyphens and fractions, which aren't easy to work with. I replaced these values with the numbers -1, 0, and 1:
 ```python
 df['results'].replace(['1-0', '1/2-1/2', '0-1'],
                         [1, 0, -1], inplace=True)

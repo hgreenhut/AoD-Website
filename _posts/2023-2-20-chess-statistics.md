@@ -235,6 +235,8 @@ Finally, I plotted this table on a barplot, with the rating category on the x-ax
 
 And we can see that the Lemming Defense thrives until the players reach around 1800 elo. At the highest level, it is usually unsuccessful for white -- but at least still better than the Amar Gambit.
 
+Obviously, statistics about games played by other players are not a good determiner of what is a good opening for **you**. What's important is how well you and your opponent know the oppening, not how others perform with it. Your playing style and experience are much better metrics for deciding what openings to pick than how many games white or black won with that opening in January 2017 on Lichess. Nonetheless, analyzing such a large, detailed dataset is a great opportunity to find interesting patterns, even if those patterns won't make you a grandmaster.
+
 **Sources used**
 
 * substring between two substrings: [https://www.geeksforgeeks.org/python-extract-string-between-two-substrings/](https://www.geeksforgeeks.org/python-extract-string-between-two-substrings/)

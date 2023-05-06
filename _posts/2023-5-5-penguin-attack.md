@@ -65,4 +65,9 @@ The simulation works like this: Until either the population of Greenland or the 
 Unsurprising, with the overwhelming numbers advantage, the penguins easily win.
 ![Penguin%](../assets/img/big_pg.png)
 
+In fact, on the same axis, there's such a massive difference in orders of magnitude that its difficult to understand what happened. Putting the graphs side by side helps with this.
+
 ![Penguin%](../assets/img/zoomed_pg.png)
+30229 penguins and 56653 Greenlanders died.
+
+After a glorious victory, the penguins look Eastward, disregarding Canada and sailing toward Russia.

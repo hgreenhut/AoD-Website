@@ -15,7 +15,7 @@ Tired of being the victim of data analysis problems, the Penguins decide there i
 
 Penguins aren't historically the most dangerous of creatures. In fact, throughout human history, there have been precisely [0 recorded cases](https://animalvivid.com/do-penguins-attack-humans/) of a human being killed by a penguin. That doesn't mean it can't happen though.
 
-They may not have a taste of humans, but they have sharp, hooked beaks and a mean glare. So, it's easy to image that if they attacked in a horde, they could overwhelm a human.
+They may not have a taste for humans, but they have sharp, hooked beaks and a mean glare. So, it's easy to image that if they attacked in a horde, they could overwhelm a human.
 
 But how many of them would it take? Sticking only to the most scientific methods, I asked my Art of Data class. Please absorb the following table of the percent chance of a given number of penguins winning a fight against a human:
 
@@ -77,4 +77,4 @@ Roused by their glorious victory, the Penguins forge onward into Canada.
 ![Penguin%](../assets/img/canada.png)
 
 
-Its a long and hard fight, but The 38,250,000 Russias obliterate the remaining 22,319,531 penguins. 1,860,885 Canadas gave up their lives for their country, but the Penguins have been defeated. Can the warm climate penguins avenge their fallen comrades? Only time will tell.
+Its a long and hard fight, but The 38,250,000 Canadians obliterate the remaining 22,319,531 penguins. 1,860,885 Canadians gave up their lives for their country, but the Penguins have been defeated. Can the warm climate penguins avenge their fallen comrades? Only time will tell.

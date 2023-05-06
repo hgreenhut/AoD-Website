@@ -9,7 +9,7 @@ subtitle: Lab 3
 ---
 Author: Henry Greenhut
 ---
-![Penguin%](../assets/img/penguin_dramatic_images.png)
+![Penguin%](../assets/img/penguin_dramatic_image.png)
 Tired of being the victim of data analysis problems, the Penguins decide there is only one thing to do: seige humanity.
 
 

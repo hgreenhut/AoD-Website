@@ -70,4 +70,7 @@ In fact, on the same axis, there's such a massive difference in orders of magnit
 ![Penguin%](../assets/img/zoomed_pg.png)
 30229 penguins and 56653 Greenlanders died.
 
-After a glorious victory, the penguins look Eastward, disregarding Canada and sailing toward Russia.
+Roused by their glorious victory, the Penguins forge onward into Canada. It doesn't end well.
+
+![Penguin%](../assets/img/canada.png)
+The 143,400,000 Russias obliterate the remaining 22,319,531

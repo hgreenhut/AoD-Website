@@ -70,7 +70,7 @@ In fact, on the same axis, there's such a massive difference in orders of magnit
 ![Penguin%](../assets/img/zoomed_pg.png)
 30229 penguins and 56653 Greenlanders died.
 
-Roused by their glorious victory, the Penguins forge onward into Canada. It doesn't end well.
+Roused by their glorious victory, the Penguins forge onward into Canada.
 
 ![Penguin%](../assets/img/canada.png)
-The 143,400,000 Russias obliterate the remaining 22,319,531
+Its a long and hard fight, but The 38,250,000 Russias obliterate the remaining 22,319,531 penguins. 1,860,885 Canadas gave up their lives for their country, but the Penguins have been defeated. Can the warm climate penguins avenge their fallen comrades? Only time will tell.

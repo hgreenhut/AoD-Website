@@ -18,9 +18,13 @@ Penguins aren't historically the most dangerous of creatures. In fact, throughou
 They may not have a taste of humans, but they have sharp, hooked beaks and a mean glare. So, it's easy to image that if they attacked in a horde, they could overwhelm a human.
 
 But how many of them would it take? Sticking only to the most scientific methods, I asked my Art of Data class. Please absorb the following table of the percent chance of a given number of penguins winning a fight against a human:
-| # of Penguins      | Chance of winning |
-| ----------- | ----------- |
-| 1      | 7%       |
-| 10   | 25%        |
-| 25      | 75%       |
-| 50   | 99%       |
+| # of Penguins | Chance of winning |
+| -----------   | -----------       |
+| 1             | 7%                |
+| 10            | 25%               |
+| 25            | 75%               |
+| 50            | 99%               |
+
+By graphing these numbers, we can derive an equation of the line of best fit to determine how the chance of the penguins winning grows for each additional penguin.
+
+![Penguin%](../assets/img/penguin_percentages.png)

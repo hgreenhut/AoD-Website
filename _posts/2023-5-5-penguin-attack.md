@@ -8,13 +8,14 @@ subtitle: Henry Greenhut
 # comments: true
 ---
 ![Penguin%](../assets/img/penguin_dramatic_image.png)
+
 Tired of being the victim of data analysis problems, The Penguins decide there is only one thing to do: seige humanity.
 
 Penguins aren't historically the most dangerous of creatures. In fact, throughout human history, there have been precisely [0 recorded cases](https://animalvivid.com/do-penguins-attack-humans/) of a human being killed by a penguin. But that doesn't mean it can't happen.
 
 They may not have a taste for humans, but penguins have sharp, hooked beaks and a mean glare. So, it's easy to image that if they attacked in a horde, they could overwhelm a lone human.
 
-But how many penguins would it take? Sticking only to the most scientific methods, I asked my Art of Data class. Please absorb the following table of the percent chance of a given number of penguins winning a fight against a human:
+But how many penguins would it take? Sticking only to the most scientific methods, I asked my Art of Data class. Please absorb the following table of the percent chance a given number of penguins has to win a fight against a single human:
 
 | # of Penguins | Chance of Winning |
 |---------------|-------------------|

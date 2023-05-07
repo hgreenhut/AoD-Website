@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What if the Penguins fought back?
-subtitle: Author: Henry Greenhut
+subtitle: Henry Greenhut
 # gh-repo: daattali/beautiful-jekyll
 # gh-badge: [star, fork, follow]
 # tags: [test]

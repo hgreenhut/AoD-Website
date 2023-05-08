@@ -56,9 +56,9 @@ But of the 18 species of Penguins, only 4 of them live in colder climates (Emper
 
 This climate division will make it difficult for all The Penguins to work together. Thinking realisticially, The Penguins would split into 2 groups: the colder climate penguins, and the warmer climate penguins. Let's focus on the colder climate penguins first.
 
-After converging at their home base in Antartica, The Cold Penguins look toward Greenland as an obvious target. I ran a simulation to predict how Greenland's pitiful population of 56,653 fared against the mighty 22,349,760 invading penguins.
+After converging at their home base in Antarctica, The Cold Penguins look toward Greenland as an obvious target. I ran a simulation to predict how Greenland's pitiful population of 56,653 fared against the mighty 22,349,760 invading penguins.
 
-The simulation works like this: Until either the population of Greenland or the penguins reach 0, I find the number of penguins per human, and then take a random number of penguins between 1 and that number. Then, using the equation y = 0.2303ln(x) + 0.0301 that we derived earlier, I calculate that number of penguins' chance of winning against a single human. Then, with a random number generator, I can pick a random percentage between 0 and 1. If the percentage is within the penguin's chance of winning, the human dies. If it's not, the number of penguins on the attack dies. This process continues until either all of the penguins or all of the people are dead.
+The simulation works like this: Until either the population of Greenland or The Penguins reach 0, I find the number of penguins per human, and then take a random number of penguins between 1 and that number. Then, using the equation y = 0.2303ln(x) + 0.0301 that we derived earlier, I calculate that number of penguins' chance of winning against a single human. Then, with a random number generator, I pick a random percentage between 0% and 100%. If the percentage is within the penguin's chance of winning, the human dies. If it's not, the number of penguins on the attack dies. This process continues until either all of the penguins or all of the people are dead.
 
 Unsurprising, with the overwhelming numbers advantage, the penguins easily win.
 

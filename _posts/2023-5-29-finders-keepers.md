@@ -29,9 +29,9 @@ For now, here's a snapshot of the MTA dataset from 2018, with some of the more p
 
 As of 2018, there were 751,622 items, but after 2018, they stopped updating the live database.
 
-I'm not the first data scientists to interest themselves in the dropped wallets of unknown New Yorkers. Check out this great article by fivethirtyeight.com (https://fivethirtyeight.com/features/mta-new-york-lost-and-found-subway-most-common/).
+I'm not the first data scientists to interest themselves in the dropped wallets of unknown New Yorkers. Check out this great article by [fivethirtyeight.com](https://fivethirtyeight.com/features/mta-new-york-lost-and-found-subway-most-common/).
 
-It's worth noting that there are some peculiarities for this dataset. On their developer portal (http://web.mta.info/developers/developer-data-terms.html#data), the mta claims that the Lost and Found data is refreshed every hour, but it's not even available online anymore --> I had to track down an old snapshot of it. Also, while fivethirtyeight claims that the dataset is consistently updated when the article was published in 2014, this post investigating the data shows that the data stopped updating sometime before or during 2018 
+It's worth noting that there are some peculiarities for this dataset. On their [developer portal](http://web.mta.info/developers/developer-data-terms.html#data), the mta claims that the Lost and Found data is refreshed every hour, but it's not even available online anymore --> I had to track down an old snapshot of it. Also, while fivethirtyeight claims that the dataset is consistently updated when the article was published in 2014, this post investigating the data shows that the data stopped updating sometime before or during 2018 
 
 It's also unclear when the MTA started their lost and found program. Their online claim system started in 2009, so they must have started collecting items sometime between 2009 and when the MTA began operating in 1965. 
 
@@ -42,7 +42,7 @@ With hundreds of thousands of items left without a home, I wondered, how much wa
 
 I scraped Amazon with the item names and then collected the prices of the search results. Then, I took the 10 middle values to avoid any outliers. With those values, we can estimate an average price for each item. Here are the top 10 most expensive items, according to Amazon (fully interactive, hover over each image to see how many there are!):
 
-{% include int.html %}
+{% include final_interactive.html %}
 
 Although I can't defend the two people who left behind their electric scooters, there are only 2 of them, compared to the 50,000+ metrocards left on the subway. And this makes sense. Logic would tell us that New Yorkers are more careful with their more expensive belongings. But are they really?
 
@@ -56,22 +56,4 @@ And so, by halving all of the average prices, and then multiplying each with the
 
 **$11,081,085.6**
 
-That's a pretty impressive number, but can I buy a train with it? It's difficult to judge how expensive a New York City subway is, as they're not exactly on the market. But according to MTA's budget (http://web.mta.info/mta/budget/pdf/2008-2013%20Capital%20Plan.pdf), they spent $1.25 billion on 620 new R160 cars. That's around 2 million per car. A typical NYC Subway consists of 8-11 cars. We can by 5 -- about half. Disappointing, but not bad.
-
-
-30for30 - 168,478 items in 2014
-
-new york times - 8,000 per year
-
-
-video says 30,000 items each year, 18% go back to owners
-calculate # of times i've taken the 1 train
-
-and through all of those bleary mornings, i've also had some belongings fall victim. A wallet and 3 metrocards.
-
-And I'm not alone, 
-show top 10 graph
-
-show categories, identification first, even death certificates
-
-new yorkers do care for their expensive stuff, which make sense, but that does not explain the 13 lost saxophones
+That's a pretty impressive number, but can I buy a train with it? It's difficult to judge how expensive a New York City subway is, as they're not exactly on the market. But according to [MTA's budget report from 2013](http://web.mta.info/mta/budget/pdf/2008-2013%20Capital%20Plan.pdf), they spent $1.25 billion on 620 new R160 cars. That's around 2 million per car. A typical NYC Subway consists of 8-11 cars. We can by 5 -- about half. Disappointing, but not bad.

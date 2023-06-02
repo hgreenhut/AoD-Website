@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-e7d9b059a2aada2dbbae372ba650da61"}, "mark": {"type": "image", "height": 90, "width": 90}, "encoding": {"tooltip": [{"field": "Item Name", "type": "nominal"}, {"field": "Count", "type": "quantitative"}, {"field": "Average Price", "type": "quantitative"}], "url": {"field": "url", "type": "nominal"}, "x": {"axis": {"labelFontSize": 20, "titleFontSize": 20}, "field": "Average Price", "title": "Average Price ($)", "type": "quantitative"}, "y": {"axis": {"labelFontSize": 15, "titleFontSize": 20}, "field": "Item Name", "title": "Item Name", "type": "nominal"}}, "height": 900, "width": 1000, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-e7d9b059a2aada2dbbae372ba650da61": [{"Item Name": "Electric Motor Scooter", "Average Price": 1410.38, "Count": 2, "url": "https://m.media-amazon.com/images/I/81KAd6zrb8L.jpg"}, {"Item Name": "Electric wheelchair/scooter", "Average Price": 688.2, "Count": 3, "url": "https://m.media-amazon.com/images/I/717Rb1zqpHL.jpg"}, {"Item Name": "Tefillin/Phylacteries (Jewish)", "Average Price": 667.2, "Count": 21, "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/A_set_of_Tefillin.jpg"}, {"Item Name": "Television set", "Average Price": 587.19, "Count": 10, "url": "https://secure.img1-fg.wfcdn.com/im/32766024/resize-h600-w600%5Ecompr-r85/2323/232327787/TV+Stand+for+TVs+up+to+70%22.jpg"}, {"Item Name": "Bicycle", "Average Price": 327.47, "Count": 229, "url": "http://cdn.shopify.com/s/files/1/0232/3305/products/6061-eBikeCommuter-MatteBlack_1_large.jpg?v=1684443969"}, {"Item Name": "Air conditioner", "Average Price": 316.16, "Count": 2, "url": "https://m.media-amazon.com/images/I/81-ujlyyh2L._AC_UF894,1000_QL80_.jpg"}, {"Item Name": "PDA", "Average Price": 293.24, "Count": 18, "url": "https://miro.medium.com/v2/resize:fit:1400/1*Ufn2MaF7AeKAHhPeSnTuBg.png"}, {"Item Name": "Saxophone", "Average Price": 291.63, "Count": 41, "url": "https://cdn11.bigcommerce.com/s-sjkuycrcgv/images/stencil/1280x1280/products/2546/8101/5E608AD0-4558-4F5F-A144-8500EC4B4385__89011.1604514514.jpg?c=2"}, {"Item Name": "Golf Club", "Average Price": 279.69, "Count": 6, "url": "https://www.collinsdictionary.com/images/full/golfclub_115180627_1000.jpg"}, {"Item Name": "Electronic Tablet", "Average Price": 260.87, "Count": 1341, "url": "https://cdn.thewirecutter.com/wp-content/media/2021/09/ipad-2048px-9905.jpg?auto=webp&width=1024"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

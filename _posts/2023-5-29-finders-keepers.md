@@ -31,7 +31,7 @@ As of 2018, there were 751,622 items, but after 2018, they stopped updating the 
 
 I'm not the first data scientists to interest themselves in the dropped wallets of unknown New Yorkers. Check out this great article by [fivethirtyeight.com](https://fivethirtyeight.com/features/mta-new-york-lost-and-found-subway-most-common/).
 
-It's worth noting that there are some peculiarities for this dataset. On their [developer portal](http://web.mta.info/developers/developer-data-terms.html#data), the mta claims that the Lost and Found data is refreshed every hour, but it's not even available online anymore --> I had to track down an old snapshot of it. Also, while fivethirtyeight claims that the dataset is consistently updated when the article was published in 2014, this post investigating the data shows that the data stopped updating sometime before or during 2018 
+It's worth noting that there are some peculiarities for this dataset. On their [developer portal](http://web.mta.info/developers/developer-data-terms.html#data), the mta claims that the Lost and Found data is refreshed every hour, but it's not even available online anymore --> I had to track down an old snapshot of it. Also, while fivethirtyeight claims that the dataset is consistently updated when the article was published in 2014, [this github post](https://github.com/jsoma/data-studio-projects/issues/176) investigating the data shows that the data stopped updating sometime before or during 2018 
 
 It's also unclear when the MTA started their lost and found program. Their online claim system started in 2009, so they must have started collecting items sometime between 2009 and when the MTA began operating in 1965. 
 

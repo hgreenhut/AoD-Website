@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.8.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-1d78df4a5af11cd6ffbd7986608d0681"}, "mark": {"type": "image", "height": 80, "width": 80}, "encoding": {"tooltip": [{"field": "item", "type": "nominal"}, {"field": "average", "type": "quantitative"}], "url": {"field": "url", "type": "nominal"}, "x": {"field": "average", "title": "Average Price ($)", "type": "quantitative"}, "y": {"field": "item", "title": "Item Name", "type": "nominal"}}, "height": 800, "title": "Top 10 Most Expensive Lost Belongings", "width": 1200, "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json", "datasets": {"data-1d78df4a5af11cd6ffbd7986608d0681": [{"count": 1341, "group": "Electronics", "item": "Electronic Tablet", "Total Price": 174913.335, "average": 260.87, "lowest": 139.95, "highest": 469.9, "prices": "[119.99, 149.99, 258.95, 329.99, 59.99, 99.99, 39.99, 65.98, 69.99, 15.99, 49.99, 69.99, 709.0, 459.99, 599.99, 119.99, 1799.0, 169.99, 89.98, 3398.0, 872.99, 139.95, 149.95, 9.99, 564.95, 499.99, 529.0, 469.9, 25.99, 149.99, 10.99, 12.69, 879.99, 599.99, 1799.0, 1799.0, 543.9, 912.49, 329.99, 39.99]", "url": "https://cdn.thewirecutter.com/wp-content/media/2021/09/ipad-2048px-9905.jpg?auto=webp&width=1024"}, {"count": 6, "group": "Sports Equipment", "item": "Golf Club", "Total Price": 839.07, "average": 279.69, "lowest": 249.99, "highest": 319.54, "prices": "[254.15, 299.99, 379.95, 549.95, 254.15, 299.99, 399.0, 319.54, 399.99, 248.53, 429.99, 35.45, 59.99, 289.99, 275.0, 254.15, 299.99, 899.0, 574.95, 699.99, 99.99, 119.99, 1714.24, 249.99, 469.99, 29.95, 20.66, 799.99, 62.59, 101.69, 399.99, 64.0, 1120.99, 1289.0, 399.99, 699.0, 199.99, 362.14, 120.71, 499.99, 999.91, 1299.93, 1399.99, 37.38, 1699.99, 49.8, 69.8, 31.32, 189.99, 249.99, 159.99, 179.99, 242.54, 119.0, 156.15]", "url": "https://www.collinsdictionary.com/images/full/golfclub_115180627_1000.jpg"}, {"count": 41, "group": "Musical Instrument", "item": "Saxophone", "Total Price": 5978.415, "average": 291.63, "lowest": 263.49, "highest": 314.57, "prices": "[263.49, 329.99, 319.99, 449.99, 429.99, 314.57, 298.88, 219.99, 263.49, 329.99, 219.99, 189.99, 198.99, 213.0, 601.58, 259.9, 319.6, 219.99, 1195.0, 489.0, 263.49, 329.99, 299.0, 189.99, 199.99, 173.79, 489.0, 314.57, 263.49, 329.99, 359.99, 259.99, 210.0, 289.95, 203.99, 215.99, 219.99, 259.99, 298.88, 229.99, 254.99, 801.16, 99.69, 119.99, 5840.99, 219.99, 309.99, 405.91, 610.47, 359.99, 429.99, 549.99, 359.99, 259.99, 263.49, 329.99]", "url": "https://cdn11.bigcommerce.com/s-sjkuycrcgv/images/stencil/1280x1280/products/2546/8101/5E608AD0-4558-4F5F-A144-8500EC4B4385__89011.1604514514.jpg?c=2"}, {"count": 18, "group": "Electronics", "item": "PDA", "Total Price": 2639.16, "average": 293.24, "lowest": 85.5, "highest": 520.79, "prices": "[399.99, 599.99, 649.99, 7.78, 399.99, 947.99, 599.99, 529.99, 160.99, 399.0, 238.99, 399.0, 85.5, 4.98, 158.12, 520.79, 578.65, 169.99, 69.99, 5.49, 8.9, 9.99, 629.99, 629.99, 14.99, 629.99, 699.99, 6.99, 24.5, 34.99, 49.99, 6.78, 629.99]", "url": "https://miro.medium.com/v2/resize:fit:1400/1*Ufn2MaF7AeKAHhPeSnTuBg.png"}, {"count": 2, "group": "Electronics", "item": "Air conditioner", "Total Price": 316.16, "average": 316.16, "lowest": 269.97, "highest": 374.99, "prices": "[419.99, 499.0, 208.19, 269.0, 449.99, 569.99, 159.99, 179.0, 149.0, 179.0, 382.99, 439.0, 419.99, 499.0, 208.19, 269.0, 374.99, 499.99, 339.99, 379.99, 229.0, 419.99, 499.0, 399.99, 465.99, 499.0, 491.03, 569.99, 62.99, 79.99, 219.99, 239.99, 299.99, 369.99, 249.0, 269.0, 69.99, 208.19, 269.0, 249.99, 289.99, 179.97, 269.97, 245.99, 31.99, 329.99, 439.99, 382.99, 439.0, 159.99, 199.99, 189.99, 314.1, 506.99, 272.6, 299.99, 379.0, 399.0]", "url": "https://m.media-amazon.com/images/I/81-ujlyyh2L._AC_UF894,1000_QL80_.jpg"}, {"count": 229, "group": "Sports Equipment", "item": "Bicycle", "Total Price": 37495.315, "average": 327.47, "lowest": 306.67, "highest": 339.98, "prices": "[491.06, 1750.0, 195.49, 229.99, 2299.99, 328.79, 349.99, 128.0, 149.99, 415.99, 154.99, 306.67, 168.99, 199.99, 205.0, 195.49, 229.99, 199.99, 339.82, 579.99, 329.99, 498.0, 369.99, 129.99, 315.0, 499.99, 699.99, 849.99, 899.99, 290.0, 329.0, 360.73, 298.44, 339.99, 169.99, 199.99, 329.99, 799.99, 1097.99, 569.95, 72.99, 99.99, 499.99, 169.99, 339.98, 339.82, 948.99, 168.99, 188.49, 2299.99, 260.9, 415.99, 291.0, 315.66]", "url": "http://cdn.shopify.com/s/files/1/0232/3305/products/6061-eBikeCommuter-MatteBlack_1_large.jpg?v=1684443969"}, {"count": 10, "group": "Electronics", "item": "Television set", "Total Price": 2935.95, "average": 587.19, "lowest": 449.99, "highest": 798.0, "prices": "[799.95, 949.0, 1197.99, 999.0, 7499.99, 204.0, 219.0, 799.95, 949.0, 219.99, 279.99, 898.0, 949.99, 69.99, 119.99, 1197.99, 1597.99, 549.99, 647.99, 4298.0, 169.99, 309.99, 449.99, 1098.0, 1499.99, 23.99, 32.99, 2799.0, 3999.99, 599.99, 759.99, 499.0, 539.0, 798.0, 899.99, 382.43, 204.0, 219.0, 499.0, 529.0, 4568.95, 4868.95, 2797.97, 199.99, 249.99, 138.0, 159.99, 298.0, 369.99, 129.99, 229.99]", "url": "https://secure.img1-fg.wfcdn.com/im/32766024/resize-h600-w600%5Ecompr-r85/2323/232327787/TV+Stand+for+TVs+up+to+70%22.jpg"}, {"count": 21, "group": "Miscellaneous", "item": "Tefillin/Phylacteries (Jewish)", "Total Price": 7005.6, "average": 667.2, "lowest": 71.62, "highest": 1124.0, "prices": "[1124.0, 1124.0, 1124.0, 1124.0, 449.99, 345.0, 1124.0, 1124.0, 1124.0, 1124.0, 1124.0, 12.0, 1.99, 71.62, 82.39, 67.5, 102.99, 26.95, 8.95, 19.99]", "url": "https://upload.wikimedia.org/wikipedia/commons/0/00/A_set_of_Tefillin.jpg"}, {"count": 3, "group": "Medical Equipment & Medication", "item": "Electric wheelchair/scooter", "Total Price": 1032.3, "average": 688.2, "lowest": 569.99, "highest": 799.99, "prices": "[1299.99, 1399.99, 2499.0, 999.0, 72.0, 99.85, 589.0, 695.0, 2499.0, 1999.0, 2999.0, 3999.0, 1999.0, 799.99, 475.0, 569.99, 599.99, 18.7, 799.99, 680.0, 2999.0, 2299.0, 988.0, 999.99, 546.0, 69.0, 899.0, 19.58, 9.99, 749.99, 18.99, 16.99, 24.91, 26.99, 20.99, 548.0, 849.99, 940.0, 25.99, 23.99, 28.99, 17.99, 3999.0, 699.0, 699.0, 119.19]", "url": "https://m.media-amazon.com/images/I/717Rb1zqpHL.jpg"}, {"count": 2, "group": "Sports Equipment", "item": "Electric Motor Scooter", "Total Price": 1410.38, "average": 1410.38, "lowest": 986.34, "highest": 1799.99, "prices": "[439.0, 599.0, 649.99, 799.99, 189.99, 3999.0, 1999.0, 2199.99, 379.97, 399.97, 288.97, 459.99, 799.0, 949.0, 1050.0, 145.97, 259.99, 1999.99, 3779.0, 1999.99, 3449.0, 2599.99, 3299.99, 3299.0, 1969.99, 733.03, 193.0, 449.99, 986.34, 1899.0, 1969.99, 1799.0, 1699.0, 1399.0, 1199.0, 1295.0, 1999.0, 3499.99, 3999.99, 7968.21, 8999.0, 1799.99, 1930.0, 3499.0, 1799.0, 379.97, 399.97, 299.98, 189.0, 599.99, 1077.52]", "url": "https://m.media-amazon.com/images/I/81KAd6zrb8L.jpg"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

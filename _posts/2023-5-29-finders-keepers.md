@@ -56,6 +56,7 @@ Now we've arrived at the real question: how much is it all worth? Calculating it
 
 And so, by halving all of the average prices, and then multiplying each with the count of the corresponding item, we reach our final figure...
 
-**$11,081,085.6**
+**$11,081,085.60**
 
 That's a pretty impressive number, but can I buy a train with it? It's difficult to judge how expensive a New York City subway is, as they're not exactly on the market. But according to [MTA's budget report from 2013](http://web.mta.info/mta/budget/pdf/2008-2013%20Capital%20Plan.pdf), they spent $1.25 billion on 620 new R160 cars. That's around 2 million per car. A typical NYC Subway consists of 8-11 cars. We can by 5 -- about half. Disappointing, but not bad.
+

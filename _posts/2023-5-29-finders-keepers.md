@@ -7,6 +7,7 @@ subtitle: Henry Greenhut
 # tags: [test]
 # comments: true
 ---
+![dalle_img%](../assets/img/finders/dalleimg.png)
 It was another cold, hazy Friday morning in 2017. My wallet was packed deep in my right pocket, filled with $1 bills in eager preparation for the bake sale later in the day. I boarded the 1 train, finding a seat in the back of the car. I stood as the train screeched to a halt at 110th street, swiftly moving toward the doors. As the doors closed behind me, I felt for my wallet. Nothing.
 
 I've taken the uptown 1 train every school morning for the past 12 years. I've ridden in the same cars so many times, that I've on multiple occations recognized a crack in the paint or a sticker on the wall from a previous ride. Multiplying the 160 days of school by the 12 years of school I've gone through, added with some extra for the numerous other times I've ridden the subway, I've been on the 1 train around 2,000 times.
@@ -29,7 +30,7 @@ For now, here's a snapshot of the MTA dataset from 2018, with some of the more p
 
 As of 2018, there were 751,622 items, but after 2018, they stopped updating the live database.
 
-I'm not the first data scientist to interest themselves in the dropped wallets of unknown New Yorkers. Check out this great article by [fivethirtyeight.com](https://fivethirtyeight.com/features/mta-new-york-lost-and-found-subway-most-common/).
+I'm not the first data scientist to interest themselves in the dropped wallets of unknown New Yorkers. Check out this [great article](https://fivethirtyeight.com/features/mta-new-york-lost-and-found-subway-most-common/) by fivethirtyeight.com.
 
 It's worth noting that there are some peculiarities for this dataset. On their [developer portal](http://web.mta.info/developers/developer-data-terms.html#data), the MTA claims that the lost and found data is refreshed every hour, but it's not even available online anymore -- I had to track down an old snapshot of it. Also, while fivethirtyeight claims that the dataset is consistently updated when the article was published in 2014, [this github post](https://github.com/jsoma/data-studio-projects/issues/176) investigating the data indicates that the data stopped updating sometime before or during 2018 
 
@@ -58,5 +59,4 @@ And so, by halving all of the average prices, and then multiplying each with the
 
 **$11,081,085.60**
 
-That's a pretty impressive number, but can I buy a train with it? It's difficult to judge how expensive a New York City subway is, as they're not exactly on the market. But according to [MTA's budget report from 2013](http://web.mta.info/mta/budget/pdf/2008-2013%20Capital%20Plan.pdf), they spent $1.25 billion on 620 new R160 cars. That's around 2 million per car. A typical NYC Subway consists of 8-11 cars. We can by 5 -- about half. Disappointing, but not bad.
-
+That's a pretty impressive number, but can I buy a train with it? It's difficult to judge how expensive a New York City subway is, as they're not exactly on the market. But according to [MTA's budget report from 2013](http://web.mta.info/mta/budget/pdf/2008-2013%20Capital%20Plan.pdf), they spent $1.25 billion on 620 new R160 cars. That's around 2 million per car. A typical NYC Subway consists of 8-11 cars. We can buy 5 -- about half of a subway. Extremely disappointing.

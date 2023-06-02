@@ -52,7 +52,11 @@ I wouldn't dare attempt to draw a line of best fit, but the graph does suggest a
 
 Now we've arrived at the real question: how much is it all worth? Calculating it isn't so simple. First of all, it's hard to judge a market price of a death certificate. All identification items, for that matter, which is the biggest category, I'm going to override the price Amazon gave and make them worthless. Secondly, each category has an "other" item, like "All other Electronics. Instead of whatever value the Amazon scrape assigned it, I'll calculate that item's average price as the average of the average prices of the other items in the same category. And finally, these items aren't going to be worth the same as a new item bought off of Amazon. After a quick foray into the world of investing and reselling, I'm going to roughly estimate that we could resell these items for half of what Amazon would sell them for.
 
-And so, by halving all of the average prices, and then multiplying 
+And so, by halving all of the average prices, and then multiplying each with the count of the corresponding item, we reach our final figure...
+
+**$11,081,085.6**
+
+That's a pretty impressive number, but can I buy a train with it? It's difficult to judge how expensive a New York City subway is, as they're not exactly on the market. But according to MTA's budget (http://web.mta.info/mta/budget/pdf/2008-2013%20Capital%20Plan.pdf), they spent $1.25 billion on 620 new R160 cars. That's around 2 million per car. A typical NYC Subway consists of 8-11 cars. We can by 5 -- about half. Disappointing, but not bad.
 
 
 30for30 - 168,478 items in 2014

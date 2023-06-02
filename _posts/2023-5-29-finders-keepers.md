@@ -43,7 +43,7 @@ I scraped Amazon with the item names and then collected the prices of the search
 ![expensive%](../assets/img/finders/expensive.png)
 
 I can't say I have any pity for the 2 people that left an Electric Motor Scooter behind.
-![expensive%](../assets/img/finders/int.html)
+{% include int.html %}
 
 
 

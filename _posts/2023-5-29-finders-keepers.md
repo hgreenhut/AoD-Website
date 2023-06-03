@@ -8,6 +8,8 @@ subtitle: Henry Greenhut
 # comments: true
 ---
 ![dalle_img%](../assets/img/finders/dalleimg.png)
+
+
 It was another cold, hazy Friday morning in 2017. My wallet was packed deep in my right pocket, filled with $1 bills in eager preparation for the bake sale later in the day. I boarded the 1 train, finding a seat in the back of the car. I stood as the train screeched to a halt at 110th street, swiftly moving toward the doors. As the doors closed behind me, I felt for my wallet. Nothing.
 
 I've taken the uptown 1 train every school morning for the past 12 years. I've ridden in the same cars so many times, that I've on multiple occations recognized a crack in the paint or a sticker on the wall from a previous ride. Multiplying the 160 days of school by the 12 years of school I've gone through, added with some extra for the numerous other times I've ridden the subway, I've been on the 1 train around 2,000 times.
